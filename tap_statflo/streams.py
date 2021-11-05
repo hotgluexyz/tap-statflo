@@ -39,7 +39,7 @@ class CustomerActivityStream(statfloStream):
         th.Property("ban_id", th.StringType),
         th.Property("created_at", th.DateTimeType),
         th.Property("date_added", th.DateTimeType),
-        th.Property("dealer_id", th.StringType),
+        th.Property("dealer_id", th.IntegerType),
         th.Property("dealer_name", th.StringType),
         th.Property("lead_code", th.StringType),
         th.Property("message", th.StringType),
@@ -52,9 +52,9 @@ class CustomerActivityStream(statfloStream):
         th.Property("outlet_id", th.StringType),
         th.Property("record_source", th.StringType),
         th.Property("subject", th.StringType),
-        th.Property("type", th.StringType),
+        th.Property("type", th.IntegerType),
         th.Property("type_description", th.StringType),
         th.Property("updated_at", th.DateTimeType),
         th.Property("user_email", th.StringType),
-        th.Property("user_id", th.StringType)
+        th.Property("user_id", th.IntegerType)
     ).to_dict()
